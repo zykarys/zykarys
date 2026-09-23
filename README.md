@@ -23,4 +23,4 @@ Orchestrates a small AI lab: triage, briefs, workflows, and routing hard problem
 - Site: [zykarys.com](https://zykarys.com) ([repo](https://github.com/zykarys/zykarys.com))
 - GitHub: [zykarys](https://github.com/zykarys)
 
-Built to run a lab, not a personal brand page.
+© KeMeK Network 2026
