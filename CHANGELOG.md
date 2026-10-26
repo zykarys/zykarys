@@ -7,6 +7,12 @@ Versions before 0.1.4 were estimated from the commit history on 2026-10-26 and a
 
 ## [Unreleased]
 
+## [0.1.5] - 2026-10-26
+### Added
+- `.githooks/pre-push` version guard (kV, 2026-10-26: "Build pre-push check to ensure version ticks every time"). Pushes to `main` are blocked unless `VERSION` ticks exactly one step (patch, or minor with the patch reset), MAJOR is unchanged (a major needs kV's ceremony), `CHANGELOG.md` has the dated entry, `package.json` matches, and an annotated `vX.Y.Z` tag is on the pushed commit. Other branches only get a warning about `[Unreleased]` lines. Plus `.githooks/test-pre-push.sh`.
+### Changed
+- `CONTRIBUTING.md`: the pre-push hook section; never use `--no-verify`.
+
 ## [0.1.4] - 2026-09-23
 ### Changed
 - KeMeK Network © 2026 footer; branching habit (dev → QA → main).
@@ -28,5 +34,6 @@ Versions before 0.1.4 were estimated from the commit history on 2026-10-26 and a
 ### Added
 - Initial profile README.
 
-[Unreleased]: https://github.com/zykarys/zykarys/compare/v0.1.4...HEAD
+[Unreleased]: https://github.com/zykarys/zykarys/compare/v0.1.5...HEAD
+[0.1.5]: https://github.com/zykarys/zykarys/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/zykarys/zykarys/releases/tag/v0.1.4
